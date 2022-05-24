@@ -7,17 +7,13 @@
     <title>Coming soon!</title>
     <style>
       html {
-        display: table;
         font-family: Lato, "Segoe UI", Avenir, Ubuntu, Tahoma, Verdana, Helvetica, sans-serif;
+        height: 100%;
       }
 
       body {
-        display: table-cell;
-        vertical-align: middle;
         text-align: center;
         background-image: url("https://images4.alphacoders.com/114/1144182.jpg");
-        width: 100%;
-        height: 100%;
       }
 
       ::selection {
@@ -34,13 +30,27 @@
       svg {
         width: 250px;
         height: 250px;
-        transition: transform 0.25s ease;
       }
 
       svg:hover {
-        -webkit-transform: scale(1.5);
-        /* or some other value */
-        transform: scale(1.5);
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes floating {
+        from {
+          transform: translate(0, 0px);
+        }
+
+        50% {
+          transform: translate(0, 15px);
+        }
+
+        to {
+          transform: translate(0, -0px);
+        }
       }
 
       .wrapper {
@@ -59,16 +69,14 @@
       }
 
       .wrapper .icon span {
-        position: relative;
-        z-index: 2;
-        height: 60px;
         width: 60px;
-        display: block;
-        background: #fff;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
-        text-align: center;
-        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        border-radius: 20%;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.09);
+        border-top: 2px solid rgba(225, 225, 225, 0.3);
+        border-left: 2px solid rgba(225, 225, 225, 0.1);
+        border-right: 1px solid rgba(225, 225, 225, 0.2);
       }
 
       .wrapper .icon span i {
@@ -140,10 +148,11 @@
       }
 
       .footer {
-        margin-top: 20px;
-        position: relative;
-        height: auto;
-        width: auto;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
         padding: 10px;
         -webkit-backdrop-filter: blur(6px);
         backdrop-filter: blur(6px);
@@ -156,7 +165,95 @@
       a {
         color: inherit;
       }
+
+      .qtip {
+        cursor: default;
+        display: inline-block;
+        position: relative;
+        color: black;
+        border-bottom: 0.1em dotted white;
+        box-sizing: border-box;
+        font-style: normal;
+        transition: all .25s ease-in-out
+      }
+
+      .qtip:hover {
+        color: white;
+        border-bottom: 0.05em dotted black
+      }
+
+      .qtip:before {
+        font-family: 'Waiting for the Sunrise', cursive;
+        content: attr(data-tip);
+        font-size: 20px;
+        position: absolute;
+        color: #fff;
+        line-height: 1.2em;
+        padding: 0.5em;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        width: 300px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease-in-out;
+        backdrop-filter: blur(6px);
+        box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.09);
+        border-top: 2px solid rgba(225, 225, 225, 0.3);
+        border-left: 2px solid rgba(225, 225, 225, 0.1);
+        border-right: 1px solid rgba(225, 225, 225, 0.2);
+      }
+
+      .qtip:after {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        content: '';
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease-in-out
+      }
+
+      .qtip:hover:before,
+      .qtip:hover:after {
+        visibility: visible;
+        opacity: 1
+      }
+
+      .qtip.tip-top:before {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, calc(-100% - 8px));
+        box-sizing: border-box;
+        border-radius: 3px;
+      }
+
+      .qtip.tip-top:after {
+        border-width: 8px 8px 0 8px;
+        border-color: white transparent transparent transparent;
+        top: -8px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
     </style>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script>
+      function showDate() {
+        const startDate = 20220520
+        const currentDate = new Date().getTime()
+        const duration = moment(startDate, "YYYYMMDD").fromNow();
+        const tooltip = document.getElementById('soonTime');
+        tooltip.setAttribute("data-tip", `coming soon since ${duration}`)
+      }
+      var i = 0
+
+      function typeWriter(txt = 'to wait or not to wait - that is the question', speed = 100) {
+        if (i < txt.length) {
+          document.getElementById("scream").setAttribute("data-tip", txt.slice(0, i + 1))
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
   </head>
   <body>
     <a href="https://we-are-jammin.xyz" target="_blank">
@@ -190,7 +287,8 @@
         </g>
       </svg>
     </a>
-    <h1>Website coming soon, my lovelies! 😱</h1>
+    <h1>Website coming <i class="qtip tip-top" onmouseover="showDate()" data-tip="peekaboo" id="soonTime">soon</i>, my lovelies ! <i onmouseover="typeWriter()" class="qtip tip-top" data-tip="hi" id="scream">😱</i>
+    </h1>
     <div class="footer">
       <div class="wrapper">
         <div class="icon github">
@@ -221,9 +319,8 @@
           <div class="tooltip">YouTube</div>
           <span>
             <a href="#">
-              <i class="fab fa-youtube">
+              <i class="fab fa-youtube"></i>
             </a>
-            </i>
           </span>
         </div>
       </div>
