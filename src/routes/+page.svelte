@@ -14,11 +14,12 @@
 	import experienceDetails from '../data/experience.json';
 	import projectDetails from '../data/projects.json';
 	import communityDetails from '../data/communities.json';
+	import NavData from '../data/navbar.json';
 	import data from '../data/info.json';
 </script>
 
 <div>
-	<Nav name={data.name} portfolio="https://vaishnav.one" resume="/" />
+	<Nav {NavData} />
 	<div class="flex flex-col md:flex-row max-w-7xl md:mx-auto md:gap-4 md:m-4">
 		<Sidebar {data} />
 		<MobileSidebar {data} />
