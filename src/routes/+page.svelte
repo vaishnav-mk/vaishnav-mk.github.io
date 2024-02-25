@@ -2,14 +2,11 @@
 	import ExperienceCard from '../components/Cards/ExperienceCard.svelte';
 	import ProjectCard from '../components/Cards/ProjectCard.svelte';
 	import Button from '../components/Buttons/Button.svelte';
-	import logo from '$lib/images/me.jpg';
 	import Footer from '../components/Footer.svelte';
 	import Nav from '../components/Nav.svelte';
 	import Sidebar from '../components/Sidebar.svelte';
 	import CommunityCard from '../components/Cards/CommunityCard.svelte';
-	import MobileNav from '../components/MobileSidebar.svelte';
 	import MobileSidebar from '../components/MobileSidebar.svelte';
-
 	const data = {
 		name: 'Vaishnav Manoj',
 		location: 'Chennai, India',
@@ -112,7 +109,7 @@
 
 <div>
 	<Nav name={data.name} portfolio="https://vaishnav.one" resume="/" />
-	<div class="flex flex-col md:flex-row max-w-7xl mx-auto md:gap-4 md:m-4">
+	<div class="flex flex-col md:flex-row max-w-7xl md:mx-auto md:gap-4 md:m-4">
 		<Sidebar {data} />
 		<MobileSidebar {data} />
 		<!-- Main content -->

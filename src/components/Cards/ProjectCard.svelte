@@ -2,13 +2,17 @@
 	import Button from '../Buttons/Button.svelte';
 	export let title, description, links, image, location, duration;
 
-	const img_url = `/src/lib/images/${image || 'circuit.png'}`;
-</script>
+	const images = import.meta.glob('$lib/images/*.png', { eager: true });
+	console.log({ images });
+
+	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`];
+
+	console.log({ img_url });</script>
 
 <div class="bg-white rounded-lg border">
 	<div class="flex md:flex-row flex-col p-4 gap-4">
 		<div class="md:w-1/4 rounded-lg">
-			<img src={img_url} alt="Project Logo" class="rounded-lg h-full" />
+			<img src={img_url.default} alt="Project Logo" class="rounded-lg h-full" />
 		</div>
 		<div class="md:w-3/4 flex flex-col">
 			<div class="flex justify-between">
