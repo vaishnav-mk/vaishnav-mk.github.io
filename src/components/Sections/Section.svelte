@@ -1,11 +1,26 @@
 <script>
+	import ShowButton from '../Buttons/ShowButton.svelte';
+	import { slide } from 'svelte/transition';
+	import { onMount } from 'svelte';
+
 	export let title;
 	export let items;
 	export let Card;
 	export let displayTags = false;
+    export let showAll = false;
 
 	let tags = [...new Set(items.flatMap((item) => item.tags))];
 	let selectedTag = tags[0];
+
+	const toggleShowAll = () => {
+		showAll = !showAll;
+	};
+
+	onMount(() => {
+		if (items.length <= 3) {
+			showAll = true;
+		}
+	});
 
 	displayTags = tags.length > 1 || displayTags;
 </script>
@@ -35,10 +50,17 @@
 	</div>
 	<div class="border-t-2 w-full mt-2"></div>
 	<div class="grid grid-cols-1 gap-4 mt-4">
-		{#each items as item}
-			{#if item.tags.includes(selectedTag)}
-				<Card {...item} />
-			{/if}
+		{#each items.slice(0, showAll ? undefined : 3) as item}
+			<div transition:slide={{ amount: 10 }}>
+				{#if item.tags.includes(selectedTag)}
+					<div transition:slide={{ amount: 10 }}>
+						<Card {...item} />
+					</div>
+				{/if}
+			</div>
 		{/each}
 	</div>
+	{#if items.length > 3}
+		<ShowButton onClick={toggleShowAll} text={showAll ? 'Show less' : 'Show more'} />
+	{/if}
 </div>

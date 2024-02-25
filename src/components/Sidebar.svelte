@@ -11,7 +11,7 @@
 		<p>
 			📌 {data.location}
 		</p>
-        <p>
+		<p>
 			🎓 {data.university}
 		</p>
 		<ul class="grid grid-cols-2 gap-1 mt-5">

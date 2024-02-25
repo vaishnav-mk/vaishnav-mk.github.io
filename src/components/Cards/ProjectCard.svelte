@@ -5,11 +5,9 @@
 	const images = import.meta.glob('$lib/images/*.png', { eager: true });
 
 	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`];
-	import { slide } from 'svelte/transition';
-
 </script>
 
-<div class="bg-white rounded-lg border" transition:slide={{ amount: 10 }}>
+<div class="bg-white rounded-lg border">
 	<div class="flex md:flex-row flex-col p-4 gap-4">
 		<div class="md:w-1/4 rounded-lg">
 			<img src={img_url.default} alt="Project Logo" class="rounded-lg h-full" />
