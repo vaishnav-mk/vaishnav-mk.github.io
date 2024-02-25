@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Geist';
+	src:
+		url('$lib/fonts/Geist/Geist-Light.woff2') format('woff2'),
+		url('$lib/fonts/Geist/Geist-Light.woff') format('woff'),
+		url('$lib/fonts/Geist/Geist-Light.ttf') format('truetype'),
+		url('$lib/fonts/Geist/Geist-Regular.woff2') format('woff2'),
+		url('$lib/fonts/Geist/Geist-Regular.woff') format('woff'),
+		url('$lib/fonts/Geist/Geist-Regular.ttf') format('truetype')
+		url('$lib/fonts/Geist/Geist-Bold.woff2') format('woff2'),
+		url('$lib/fonts/Geist/Geist-Bold.woff') format('woff'),
+		url('$lib/fonts/Geist/Geist-Bold.ttf') format('truetype')
+		url('$lib/fonts/Geist/Geist-Medium.woff2') format('woff2'),
+		url('$lib/fonts/Geist/Geist-Medium.woff') format('woff'),
+		url('$lib/fonts/Geist/Geist-Medium.ttf') format('truetype'),
+		url('$lib/fonts/Geist/Geist-UltraBlack.woff2') format('woff2'),
+		url('$lib/fonts/Geist/Geist-UltraBlack.woff') format('woff'),
+		url('$lib/fonts/Geist/Geist-UltraBlack.ttf') format('truetype'),
+		url('$lib/fonts/Geist/Geist-UltraLight.woff2') format('woff2'),
+		url('$lib/fonts/Geist/Geist-UltraLight.woff') format('woff'),
+		url('$lib/fonts/Geist/Geist-UltraLight.ttf') format('truetype'),
+		url('$lib/fonts/Geist/Geist-SemiBold.woff2') format('woff2'),
+		url('$lib/fonts/Geist/Geist-SemiBold.woff') format('woff'),
+		url('$lib/fonts/Geist/Geist-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+
+.link-hover-border {
+	position: relative;
+	overflow: hidden;
+	color: currentColor;
+	text-decoration: none;
+  }
+  
+  .link-hover-border::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background-color: currentColor;
+	transition: width 0.3s ease-in-out;
+	transform: translateX(-50%);
+  }
+  
+  .link-hover-border:hover::before {
+	width: 100%;
+  }
+  
