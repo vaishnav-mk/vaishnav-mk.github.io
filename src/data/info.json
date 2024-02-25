@@ -1,5 +1,5 @@
 {
-	"about": "I am an undergraduate student at SRM Intitute of Science & Technology, pursuing a bachelor’s degree in technology with specialization in Software Engineering. Currently, my research revolves around quantum key distribution protocols and error correction techniques. I am actively involved in investigating Quantum Key Distribution (QKD) under the mentorship of Dr. Gayathri M. Additionally, I contribute to the Machine Learning division at NextTech Lab, leveraging my expertise to explore the intersection of quantum computing and machine learning.",
+	"about": "I am an undergraduate student at SRM Intitute of Science & Technology, pursuing a bachelor’s degree in technology with specialization in Software Engineering. Currently, my research revolves around quantum key distribution protocols and error correction techniques. I am actively involved in investigating Quantum Key Distribution (QKD) under the mentorship of Dr. Gayathri M. Additionally, I contribute to the Machine Learning division at [NextTech Lab](https://nexttechlab.club), leveraging my expertise to explore the intersection of quantum computing and machine learning.",
 	"name": "Vaishnav Manoj",
 	"location": "Chennai, India",
 	"university": "SRM Institute of Science & Technology",
@@ -9,7 +9,8 @@
 		"🕊️ Twitter": "https://twitter.com/vaishnav240204",
 		"💼 LinkedIn": "https://www.linkedin.com/in/vaishnav-manoj-2a3b3b1b3/",
 		"🧑‍💻 Github": "https://github.com/vaishnav-mk",
-        "📝 Medium": "https://medium.com/@wishee",
-        "📃 Resume": "https://www.vaishnav.one/resume"
-	}
+		"📝 Medium": "https://medium.com/@wishee",
+		"📃 Resume": "https://www.vaishnav.one/resume"
+	},
+	"footer": "Quantum leaps in ML, fueled by [recursive](/) exploration, unlock the universe's potential."
 }

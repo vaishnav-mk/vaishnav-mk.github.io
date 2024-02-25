@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 html {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-
 
 .link-hover-border {
 	position: relative;
 	overflow: hidden;
 	color: currentColor;
 	text-decoration: none;
-  }
-  
-  .link-hover-border::before {
-	content: "";
+}
+
+.link-hover-border::before {
+	content: '';
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -24,9 +23,13 @@ html {
 	background-color: currentColor;
 	transition: width 0.3s ease-in-out;
 	transform: translateX(-50%);
-  }
-  
-  .link-hover-border:hover::before {
+}
+
+.link-hover-border:hover::before {
 	width: 100%;
-  }
-  
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+}

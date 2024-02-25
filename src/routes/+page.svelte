@@ -34,5 +34,7 @@
 			</div>
 		</main>
 	</div>
-	<Footer />
+	{#if data.footer}
+		<Footer {data} />
+	{/if}
 </div>

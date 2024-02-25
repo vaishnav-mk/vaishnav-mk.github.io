@@ -1,6 +1,8 @@
 <script>
-    import Button from "../Buttons/Button.svelte";
-    
+	import SvelteMarkdown from 'svelte-markdown';
+
+	import Button from '../Buttons/Button.svelte';
+
 	export let data;
 </script>
 
@@ -9,7 +11,9 @@
 	<div class="border-t-2 w-full mt-2"></div>
 
 	<div class="mt-5">
-		<p class="text-lg mb-4">{data.about}</p>
+		<p class="text-lg mb-4">
+			<SvelteMarkdown source={data?.about} />
+		</p>
 		<div class="flex gap-4">
 			{#each Object.entries(data.socials) as [key, value]}
 				{#if ['📩 Email', '🧑‍💻 Github', '💼 LinkedIn', '🕊️ Twitter'].includes(key)}
