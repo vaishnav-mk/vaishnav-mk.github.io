@@ -16,10 +16,10 @@
 		university: 'SRM Institute of Science & Technology',
 		googleScholar: 'https://scholar.google.com/citations?user=',
 		socials: {
-			'📩 Email': 'vaishnav240204@gmail.com',
+			'📩 Email': 'mailto:vaishnav240204@gmail.com',
 			'🕊️ Twitter': 'https://twitter.com/vaishnav240204',
 			'💼 LinkedIn': 'https://www.linkedin.com/in/vaishnav-manoj-2a3b3b1b3/',
-			'🧑‍💻 Github': 'vaishnav-mk'
+			'🧑‍💻 Github': 'https://github.com/vaishnav-mk'
 		}
 	};
 
