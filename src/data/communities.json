@@ -1,0 +1,17 @@
+[
+	{
+		"title": "NextTech Lab",
+		"description": [
+			"Contributing to the Machine Learning division at NextTech Lab, leveraging my expertise to explore the intersection of quantum computing and machine learning.",
+			"Currently working on a project that involves the development of a Quantum Machine Learning model using Qiskit and IBM Quantum Experience."
+		],
+		"links": [
+			{
+				"text": "Website",
+				"link": "https://nexttechlab.club/"
+			}
+		],
+		"image": "ntl.png",
+        "tags": ["Machine Learning"]
+	}
+]

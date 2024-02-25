@@ -1,12 +1,9 @@
 <script>
 	import Button from '../Buttons/Button.svelte';
 	export let title, location, duration, description, links, image;
+
 	const images = import.meta.glob('$lib/images/*.png', { eager: true });
-	console.log({ images });
-
 	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`];
-
-	console.log({ img_url });
 </script>
 
 <div class="bg-white border rounded-lg">

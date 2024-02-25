@@ -1,0 +1,20 @@
+[
+	{
+		"title": "Research Intern | Quantum Computing Lab",
+		"location": "SRM Institute of Science & Technology, Chennai",
+		"duration": "February 2024 - Present",
+		"description": [
+			"Currently focused on developing an efficient method for data protection using Quantum Key Distribution (QKD) protocols.",
+			"Engaged in the development of a Quantum Key Distribution protocol utilizing Qiskit and IBM Quantum Experience's Quantum Computers for practical implementation.",
+			"Guided by Dr. Gayathri, Assistant Professor in the Department of Computer Science and Engineering at SRMIST, for insightful advice and direction."
+		],
+		"links": [
+			{
+				"text": "Github Link",
+				"link": "https://github.com/vaishnav-mk/quantum-teleportation"
+			}
+		],
+		"image": "srm2.png",
+		"tags": ["Quantum"]
+	}
+]

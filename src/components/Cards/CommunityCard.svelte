@@ -3,11 +3,8 @@
 	export let title, description, links, image, location, duration;
 
 	const images = import.meta.glob('$lib/images/*.png', { eager: true });
-	console.log({ images });
-
 	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`];
-
-	console.log({ img_url });</script>
+</script>
 
 <div class="bg-white rounded-lg border">
 	<div class="flex md:flex-row flex-col p-4 gap-4">
