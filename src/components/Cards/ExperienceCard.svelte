@@ -3,13 +3,13 @@
 	export let title, location, duration, description, links, image;
 
 	const images = import.meta.glob('$lib/images/*.png', { eager: true });
-	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`];
+	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`]?.default;
 </script>
 
 <div class="bg-white border rounded-lg">
 	<div class="flex md:flex-row flex-col p-4 gap-4">
 		<div class="md:w-1/4 rounded-lg">
-			<img src={img_url?.default} alt="Experience Logo" class="rounded-lg h-full" />
+			<img src={img_url} alt="Experience Logo" class="rounded-lg h-full" />
 		</div>
 		<div class="md:w-3/4 flex flex-col">
 			<div class="flex justify-between">

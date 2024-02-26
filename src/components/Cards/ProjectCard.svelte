@@ -4,7 +4,7 @@
 
 	const images = import.meta.glob('$lib/images/*.png', { eager: true });
 
-	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`];
+	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`]?.default;
 </script>
 
 <div class="bg-white rounded-lg border">
