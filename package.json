@@ -29,7 +29,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"js-yaml": "^4.1.0",
-		"svelte-markdown": "^0.4.1"
+		"js-yaml": "^4.1.0"
 	}
 }
