@@ -1,4 +1,5 @@
 <script>
+	import Icon from '@iconify/svelte';
 	import logo from '$lib/images/me.jpg';
 	export let data;
 </script>
@@ -8,20 +9,23 @@
 		<img src={logo} alt="Vaishnav Manoj" class="w-48 h-48 rounded-full mx-auto mb-5" />
 		<h1 class="text-xl font-bold">{data.name}</h1>
 		<p class="my-4">Bachelor of Technology undergraduate at SRMIST</p>
-		<p>
-			📌 {data.location}
+		<p class="flex items-center gap-2">
+			<Icon icon="mdi:location" class="text-xl text-red-600" />
+			{data.location}
 		</p>
-		<p>
-			🎓 {data.university}
+		<p class="flex items-center gap-2">
+			<Icon icon="mdi:university" class="text-xl" />
+			SRM University
 		</p>
-		<ul class="grid grid-cols-2 gap-1 mt-5">
+		<ul class="grid grid-cols-2 gap-1 mt-3">
 			{#each Object.entries(data.socials) as [key, value]}
 				<a
 					href={value}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="bg-zinc-100 p-2 rounded-md hover:bg-zinc-200"
+					class="bg-zinc-100 p-2 rounded-md hover:bg-zinc-200 flex items-center gap-2 transition-all duration-300"
 				>
+					<Icon icon={value.icon} class="text-xl" />
 					{key}
 				</a>
 			{/each}

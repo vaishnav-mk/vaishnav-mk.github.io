@@ -5,12 +5,30 @@
 	"university": "SRM Institute of Science & Technology",
 	"googleScholar": "https://scholar.google.com/citations?user=",
 	"socials": {
-		"📩 Email": "mailto:vaishnav240204@gmail.com",
-		"🕊️ Twitter": "https://twitter.com/vaishnav240204",
-		"💼 LinkedIn": "https://www.linkedin.com/in/vaishnav-manoj-2a3b3b1b3/",
-		"🧑‍💻 Github": "https://github.com/vaishnav-mk",
-		"📝 Medium": "https://medium.com/@wishee",
-		"📃 Resume": "https://www.vaishnav.one/resume"
+		"Email": {
+			"icon": "ic:baseline-email",
+			"link": "mailto:vaishnav240204@gmail.com"
+		},
+		"Twitter": {
+			"icon": "mdi:twitter",
+			"link": "https://twitter.com/vaishnav240204"
+		},
+		"LinkedIn": {
+			"icon": "mdi:linkedin",
+			"link": "https://www.linkedin.com/in/vaishnav-manoj-2a3b3b1b3/"
+		},
+		"Github": {
+			"icon": "mdi:github",
+			"link": "https://github.com/vaishnav-mk"
+		},
+		"Medium": {
+			"icon": "system-uicons:write",
+			"link": "https://medium.com/@wishee"
+		},
+		"Resume": {
+			"icon": "mdi:resume",
+			"link": "https://www.vaishnav.one/resume"
+		}
 	},
 	"footer": "Quantum leaps in ML, fueled by [recursive](/) exploration, unlock the universe's potential."
 }

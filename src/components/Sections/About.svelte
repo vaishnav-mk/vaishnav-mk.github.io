@@ -14,10 +14,10 @@
 		<p class="text-lg mb-4">
 			<SvelteMarkdown source={data?.about} />
 		</p>
-		<div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+		<div class="flex gap-4">
 			{#each Object.entries(data.socials) as [key, value]}
-				{#if ['📩 Email', '🧑‍💻 Github', '💼 LinkedIn', '🕊️ Twitter'].includes(key)}
-					<Button text={key} link={value} firstUpperCase />
+				{#if ['Email', 'Github', 'LinkedIn', 'Twitter'].includes(key)}
+					<Button text={key} link={value} firstUpperCase {...value} />
 				{/if}
 			{/each}
 		</div>

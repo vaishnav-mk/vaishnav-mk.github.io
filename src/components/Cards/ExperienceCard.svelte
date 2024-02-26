@@ -26,7 +26,7 @@
 					<li>{desc}</li>
 				{/each}
 			</ul>
-			<div class="mt-4">
+			<div class="mt-4 flex gap-4">
 				{#each links as { text, link }}
 					<Button {text} {link} />
 				{/each}
