@@ -1,5 +1,5 @@
 <script>
-	import SvelteMarkdown from 'svelte-markdown';
+	import SvelteMarkdown from 'svelte-exmarkdown';
 
 	import Button from '../Buttons/Button.svelte';
 
@@ -12,7 +12,7 @@
 
 	<div class="mt-5">
 		<p class="text-lg mb-4">
-			<SvelteMarkdown source={data?.about} />
+			<SvelteMarkdown md={data?.about} />
 		</p>
 		<div class="flex gap-4">
 			{#each Object.entries(data.socials) as [key, value]}
