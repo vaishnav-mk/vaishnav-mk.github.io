@@ -12,14 +12,14 @@
 			<img src={img_url} alt="Experience Logo" class="rounded-lg h-full" />
 		</div>
 		<div class="md:w-3/4 flex flex-col">
-			<div class="flex justify-between">
+			<div class="flex flex-col md:flex-row justify-between">
 				<div class="flex flex-col">
 					<div class="font-bold text-lg">
 						{title}
 					</div>
 					<div class="text-md">{location}</div>
 				</div>
-				<h1 class="text-sm ml-4 font-semibold">{duration}</h1>
+				<h1 class="text-sm md:ml-4 font-semibold justify-end flex">{duration}</h1>
 			</div>
 			<ul class="list-disc mt-4 ml-8">
 				{#each description as desc}
