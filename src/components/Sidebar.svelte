@@ -20,7 +20,7 @@
 		<ul class="grid grid-cols-2 gap-1 mt-3">
 			{#each Object.entries(data.socials) as [key, value]}
 				<a
-					href={value}
+					href={value.link}
 					target="_blank"
 					rel="noopener noreferrer"
 					class="bg-zinc-100 p-2 rounded-md hover:bg-zinc-200 flex items-center gap-2 transition-all duration-300"
