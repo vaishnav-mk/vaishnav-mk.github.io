@@ -26,10 +26,10 @@
 </script>
 
 <div class="flex flex-col items-center mt-28">
-	<div class="flex justify-between w-full items-center">
+	<div class="flex flex-col md:flex-row justify-between w-full items-center">
 		<h1 class="text-4xl font-bold text-start w-full">{title}</h1>
 		{#if displayTags}
-			<div class="flex gap-4 w-full justify-end items-center">
+			<div class="flex gap-4 w-full md:justify-end justify-start items-center">
 				{#each tags as tag}
 					<button
 						class={`text-lg font-thin cursor-pointer ${

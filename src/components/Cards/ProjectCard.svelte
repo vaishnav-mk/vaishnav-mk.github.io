@@ -10,7 +10,7 @@
 <div class="bg-white rounded-lg border">
 	<div class="flex md:flex-row flex-col p-4 gap-4">
 		<div class="md:w-1/4 rounded-lg">
-			<img src={img_url.default} alt="Project Logo" class="rounded-lg h-full" />
+			<img src={img_url} alt="Project Logo" class="rounded-lg h-full" />
 		</div>
 		<div class="md:w-3/4 flex flex-col">
 			<div class="flex justify-between">
