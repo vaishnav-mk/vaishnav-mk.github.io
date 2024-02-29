@@ -2,12 +2,13 @@
 	import ShowButton from '../Buttons/ShowButton.svelte';
 	import { slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
+	import Card from '../Cards/Card.svelte';
 
-	export let title;
-	export let items;
-	export let Card;
+	export let sectionData;
+	const { title, data: items } = sectionData;
+
 	export let displayTags = false;
-    export let showAll = false;
+	export let showAll = false;
 
 	let tags = [...new Set(items.flatMap((item) => item.tags))];
 	let selectedTag = tags[0];

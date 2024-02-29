@@ -11,30 +11,29 @@
 	import MobileSidebar from '../components/MobileSidebar.svelte';
 	import Footer from '../components/Footer.svelte';
 
-	import experienceDetails from '../data/experience.json';
-	import projectDetails from '../data/projects.json';
-	import communityDetails from '../data/communities.json';
-	import NavData from '../data/navbar.json';
-	import data from '../data/info.json';
+	import data from '../data/data.json';
+
+	const { info, sections } = data;
+	const { navbar: NavData, footer: FooterData } = info;
 </script>
 
 <div>
 	<Nav {NavData} />
 	<div class="flex flex-col md:flex-row max-w-7xl md:mx-auto md:gap-4 md:m-4">
-		<Sidebar {data} />
-		<MobileSidebar {data} />
+		<Sidebar data={info} />
+		<MobileSidebar data={info} />
 		<main class="md:w-3/4 overflow-y-auto p-10">
 			<div class="min-w-screen min-h-screen">
 				<div class="container mx-auto max-w-5xl mt-5">
-					<About {data} />
-					<Section title="Projects" items={projectDetails} Card={ProjectCard} />
-					<Section title="Experience" items={experienceDetails} Card={ExperienceCard} />
-					<Section title="Communities" items={communityDetails} Card={CommunityCard} />
+					<About data={info} />
+					{#each sections as sectionData}
+						<Section {sectionData} />
+					{/each}
 				</div>
 			</div>
 		</main>
 	</div>
 	{#if data.footer}
-		<Footer {data} />
+		<Footer data={FooterData} />
 	{/if}
 </div>

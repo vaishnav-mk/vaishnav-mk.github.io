@@ -1,0 +1,169 @@
+{
+	"info": {
+		"about": "I am an undergraduate student at SRM Intitute of Science & Technology, pursuing a bachelor’s degree in technology with specialization in Software Engineering. Currently, my research revolves around quantum key distribution protocols and error correction techniques. I am actively involved in investigating Quantum Key Distribution (QKD) under the mentorship of Dr. Gayathri M. Additionally, I contribute to the Machine Learning division at [NextTech Lab](https://nexttechlab.club), leveraging my expertise to explore the intersection of quantum computing and machine learning.",
+		"name": "Vaishnav Manoj",
+		"location": "Chennai, India",
+		"university": "SRM Institute of Science & Technology",
+		"googleScholar": "https://scholar.google.com/citations?user=",
+		"socials": {
+			"Email": {
+				"icon": "ic:baseline-email",
+				"link": "mailto:vaishnav240204@gmail.com"
+			},
+			"Twitter": {
+				"icon": "mdi:twitter",
+				"link": "https://twitter.com/vaishnav240204"
+			},
+			"LinkedIn": {
+				"icon": "mdi:linkedin",
+				"link": "https://www.linkedin.com/in/vaishnav-manoj-2a3b3b1b3/"
+			},
+			"Github": {
+				"icon": "mdi:github",
+				"link": "https://github.com/vaishnav-mk"
+			},
+			"Medium": {
+				"icon": "system-uicons:write",
+				"link": "https://medium.com/@wishee"
+			},
+			"Resume": {
+				"icon": "mdi:resume",
+				"link": "https://www.vaishnav.one/resume"
+			}
+		},
+		"footer": "Quantum leaps in ML, fueled by [recursive](/) exploration, unlock the universe's potential.",
+		"navbar": {
+			"title": "Vaishnav Manoj",
+			"separator": "/",
+			"links": [
+				{
+					"title": "Portfolio",
+					"url": "https://vaishnav.one"
+				},
+				{
+					"title": "Resume",
+					"url": "https://www.vaishnav.one/view-resume"
+				}
+			]
+		}
+	},
+	"sections": [
+		{
+			"title": "Experience",
+			"data": [
+				{
+					"title": "Research Intern | Quantum Computing Lab",
+					"location": "SRM Institute of Science & Technology, Chennai",
+					"duration": "February 2024 - Present",
+					"description": [
+						"Currently focused on developing an efficient method for data protection using Quantum Key Distribution (QKD) protocols.",
+						"Engaged in the development of a Quantum Key Distribution protocol utilizing Qiskit and IBM Quantum Experience's Quantum Computers for practical implementation.",
+						"Guided by Dr. Gayathri, Assistant Professor in the Department of Computer Science and Engineering at SRMIST, for insightful advice and direction."
+					],
+					"links": [
+						{
+							"text": "Github Link",
+							"link": "https://github.com/vaishnav-mk/quantum-teleportation"
+						}
+					],
+					"image": "srm2.png",
+					"tags": ["Quantum"]
+				}
+			]
+		},
+		{
+			"title": "Projects",
+			"data": [
+				{
+					"title": "Quantum Teleportation",
+					"description": [
+						"Implemented the Quantum Teleportation algorithm using Qiskit and IBM Quantum Experience.",
+						"Used the IBM Quantum Experience to simulate the quantum teleportation circuit and visualize the results."
+					],
+					"links": [
+						{
+							"text": "Github Link",
+							"link": "https://google.com"
+						},
+						{
+							"text": "Deployed Link",
+							"link": "https://google.com"
+						}
+					],
+					"image": "circuit.png",
+					"tags": ["Quantum"]
+				},
+				{
+					"title": "Hamiltonian Simulation",
+					"description": [
+						"Implemented the Hamiltonian Simulation algorithm using Qiskit and IBM Quantum Experience.",
+						"Used the IBM Quantum Experience to simulate the Hamiltonian Simulation circuit and visualize the results."
+					],
+					"links": [
+						{
+							"text": "Github Link",
+							"link": "https://google.com"
+						},
+						{
+							"text": "Deployed Link",
+							"link": "https://google.com"
+						}
+					],
+					"image": "hamiltonian.png",
+					"tags": ["Quantum", "Full-Stack"]
+				}
+			]
+		},
+		{
+			"title": "Communities",
+			"data": [
+				{
+					"title": "NextTech Lab",
+					"description": [
+						"Contributing to the Machine Learning division at NextTech Lab, leveraging my expertise to explore the intersection of quantum computing and machine learning.",
+						"Currently working on a project that involves the development of a Quantum Machine Learning model using Qiskit and IBM Quantum Experience."
+					],
+					"links": [
+						{
+							"text": "Website",
+							"link": "https://nexttechlab.club"
+						}
+					],
+					"image": "ntl.png",
+					"tags": ["All", "Machine Learning"]
+				},
+				{
+					"title": "Data Science Community",
+					"description": [
+						"Leading the Data Science division at NextTech Lab, where I am responsible for organizing workshops, webinars, and hackathons to promote the culture of Data Science and Machine Learning among students.",
+						"Conducting workshops on various topics such as Data Analysis, Machine Learning, and Deep Learning."
+					],
+					"links": [
+						{
+							"text": "Website",
+							"link": "https://dscommunity.in"
+						}
+					],
+					"image": "dsc.png",
+					"tags": ["All", "Machine Learning", "Web Development"]
+				},
+				{
+					"title": "Google Developer Student Clubs",
+					"duration": "August 2020 - Present",
+					"description": [
+						"Leading the Machine Learning division at Google Developer Student Clubs, where I am responsible for organizing workshops, webinars, and hackathons to promote the culture of Machine Learning among students.",
+						"Conducting workshops on various topics such as Data Analysis, Machine Learning, and Deep Learning."
+					],
+					"links": [
+						{
+							"text": "Website",
+							"link": "https://gdscsrm.com"
+						}
+					],
+					"image": "gdsc.png",
+					"tags": ["All", "Web Development"]
+				}
+			]
+		}
+	]
+}
