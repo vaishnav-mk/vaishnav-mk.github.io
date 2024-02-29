@@ -1,3 +1,6 @@
+**Note: This template is currently in beta and may undergo significant changes. Use it at your own risk.**
+
+
 1. **Clone or Download Repository:**
 
    - Clone or download the repository containing the modular academic portfolio template from [GitHub](https://github.com/vaishnav-mk/academic-portfolio).
