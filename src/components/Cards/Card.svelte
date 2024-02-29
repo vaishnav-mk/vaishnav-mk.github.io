@@ -2,8 +2,6 @@
 	import Button from '../Buttons/Button.svelte';
 	export let title, description, links, image, location, duration;
 
-    console.log({ title, description, links, image, location, duration });
-
 	const images = import.meta.glob(`$lib/images/*.png`, { eager: true });
 
 	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`]?.default;

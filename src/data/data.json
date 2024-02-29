@@ -2,6 +2,7 @@
 	"info": {
 		"about": "I am an undergraduate student at SRM Intitute of Science & Technology, pursuing a bachelor’s degree in technology with specialization in Software Engineering. Currently, my research revolves around quantum key distribution protocols and error correction techniques. I am actively involved in investigating Quantum Key Distribution (QKD) under the mentorship of Dr. Gayathri M. Additionally, I contribute to the Machine Learning division at [NextTech Lab](https://nexttechlab.club), leveraging my expertise to explore the intersection of quantum computing and machine learning.",
 		"name": "Vaishnav Manoj",
+        "image": "me.jpg",
 		"location": "Chennai, India",
 		"university": "SRM Institute of Science & Technology",
 		"googleScholar": "https://scholar.google.com/citations?user=",

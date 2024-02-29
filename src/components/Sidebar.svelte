@@ -1,14 +1,16 @@
 <script>
 	import Icon from '@iconify/svelte';
-	import logo from '$lib/images/me.jpg';
 	export let data;
+
+	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,PNG,JPEG}`, { eager: true });
+	const img_url = images[`/src/lib/images/${data?.image || 'srm2.png'}`]?.default;
 
 	const socials = Object.entries(data?.socials || []);
 </script>
 
 <aside class="md:w-1/5 md:h-full w-full md:sticky md:top-0 md:min-h-screen p-5 hidden md:block">
 	<div class="flex flex-col items-start">
-		<img src={logo} alt="Vaishnav Manoj" class="w-48 h-48 rounded-full mx-auto mb-5" />
+		<img src={img_url} alt="Vaishnav Manoj" class="w-48 h-48 rounded-full mx-auto mb-5" />
 		<h1 class="text-xl font-bold">{data?.name}</h1>
 		<p class="my-4">Bachelor of Technology undergraduate at SRMIST</p>
 		<p class="flex items-center gap-2">
