@@ -5,6 +5,7 @@
 	const images = import.meta.glob(`$lib/images/*.png`, { eager: true });
 
 	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`]?.default;
+	import Markdown from 'svelte-exmarkdown';
 </script>
 
 <div class="border rounded-lg dark:bg-gray-900 dark:border-slate-500">
@@ -24,7 +25,9 @@
 			</div>
 			<ul class="list-disc mt-4 ml-8">
 				{#each description as desc}
-					<li>{desc}</li>
+					<li>
+						<Markdown md={desc} />
+					</li>
 				{/each}
 			</ul>
 			<div class="mt-4 flex gap-4">

@@ -10,9 +10,7 @@
 	import data from '../data/data.json';
 
 	const { info, sections } = data;
-	const { navbar: NavData, footer: FooterData } = info;
-
-	console.log({FooterData})
+	const { navbar: NavData, footer: FooterData, darkMode } = info;
 </script>
 
 <div class="dark:bg-slate-900 dark:text-white">
@@ -38,6 +36,6 @@
 		</main>
 	</div>
 	{#if FooterData}
-		<Footer data={FooterData} />
+		<Footer data={FooterData}, {darkMode} />
 	{/if}
 </div>
