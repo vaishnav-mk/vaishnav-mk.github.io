@@ -50,17 +50,13 @@
 		{/if}
 	</div>
 	<div class="border-t-2 w-full mt-2 dark:border-slate-500"></div>
-	<div class="grid grid-cols-1 gap-4 mt-4">
-		{#each items.slice(0, showAll ? undefined : 3) as item}
-			<div transition:slide={{ amount: 10 }}>
-				{#if item.tags.includes(selectedTag)}
-					<div transition:slide={{ amount: 10 }}>
-						<Card {...item} />
-					</div>
-				{/if}
+	{#each items.slice(0, showAll ? undefined : 3) as item}
+		{#if item.tags.includes(selectedTag)}
+			<div transition:slide={{ amount: 10 }} class="flex flex-col w-full gap-4 mt-5">
+				<Card {...item} />
 			</div>
-		{/each}
-	</div>
+		{/if}
+	{/each}
 	{#if items.length > 3}
 		<ShowButton onClick={toggleShowAll} text={showAll ? 'Show less' : 'Show more'} />
 	{/if}
