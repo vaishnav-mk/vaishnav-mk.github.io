@@ -22,7 +22,7 @@
 			<Icon icon="mdi:university" class="text-xl" />
 			SRM University
 		</p>
-		<ul class="grid grid-cols-2 gap-1 mt-3">
+		<ul class="flex flex-col gap-4 mt-5 w-full">
 			{#each socials as [key, value]}
 				<Button text={key} link={value?.link} icon={value?.icon} />
 			{/each}
