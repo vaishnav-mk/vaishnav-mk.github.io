@@ -13,10 +13,10 @@
 {:else}
 	<a
 		href={link}
-		class="text-blue-700 bg-blue-100 rounded-md px-4 py-2 hover:bg-blue-200 transition-all duration-300 text-center flex items-center gap-2"
+		class="text-blue-700 bg-blue-100 rounded-md px-4 py-2 hover:bg-blue-200 transition-all duration-300 text-center flex items-center gap-2 dark:bg-gray-700 dark:text-slate-400"
 	>
 		{#if icon || buttonIcon}
-			<Icon {icon} class={iconOnly ? '' : 'mr-1'}  />
+			<Icon {icon} class={`${iconOnly ? '' : 'mr-1'} text-xl`}  />
         {/if}
 		{#if text && !iconOnly}
 			<span class="text-lg font-semibold">{text}</span>

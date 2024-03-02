@@ -11,9 +11,11 @@
 
 	const { info, sections } = data;
 	const { navbar: NavData, footer: FooterData } = info;
+
+	console.log({FooterData})
 </script>
 
-<div>
+<div class="dark:bg-slate-900 dark:text-white">
 	{#if NavData}
 		<Nav {NavData} />
 	{/if}

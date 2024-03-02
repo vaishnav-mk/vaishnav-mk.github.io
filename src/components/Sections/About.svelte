@@ -6,9 +6,9 @@
 	const socials = Object.entries(data?.socials || {});
 </script>
 
-<div class="flex flex-col justify-between">
+<div class="flex flex-col justify-between dark:text-slate-400">
 	<h1 class="text-4xl font-bold text-start">About Me</h1>
-	<div class="border-t-2 w-full mt-2"></div>
+	<div class="border-t-2 w-full mt-2 dark:border-slate-500"></div>
 
 	<div class="mt-5 flex flex-wrap gap-4">
 		<p class="text-lg mb-4">
