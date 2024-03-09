@@ -62,7 +62,7 @@
 			"data": [
 				{
 					"title": "Quantum Computing Lab",
-					"designation": "Research Intern",
+					"designation": "Research Assistant",
 					"location": "SRM University, Chennai",
 					"duration": "February 2024 - Present",
 					"description": [
@@ -132,9 +132,9 @@
 					"location": "Chennai, IN",
 					"duration": "September 2023 - Present",
 					"description": [
-						"- Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I orchestrated seamless project collaboration, driving cutting-edge research in **AI** and **Quantum Computing**.",
-						"- Developed Next Tech Lab’s website using **Next.js, TailwindCSS, and Sanity.io CMS**, achieving a perfect **100%** score on Lighthouse performance metrics, ensuring modern and optimized user experience.",
-						"- Created the **NTL Quest Site**, a secret recruiting challenge, based on the **5 labs** under Next Tech Lab."
+						"Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I orchestrated seamless project collaboration, driving cutting-edge research in **AI** and **Quantum Computing**.",
+						"Developed Next Tech Lab’s website using **Next.js, TailwindCSS, and Sanity.io CMS**, achieving a perfect **100%** score on Lighthouse performance metrics, ensuring modern and optimized user experience.",
+						"Created the **NTL Quest Site**, a secret recruiting challenge, based on the **5 labs** under Next Tech Lab."
 					],
 					"links": [
 						{
@@ -152,11 +152,11 @@
 					"location": "SRM, Chennai",
 					"duration": "December 2022 - Present",
 					"description": [
-						"- Managed and guided web development initiatives, creating an efficient [URL shortener](https://example.com) using **Next.js, MongoDB, and Redis** for optimized caching.",
-						"- Achieved a substantial *170% reduction* in load time for the [Club’s website](https://dscommunity.in), optimizing it from **18.7 seconds** to approximately **1.5 seconds**.",
-						"- Authored diverse [Medium articles](https://medium.com/data-science-community-srm) for the Data Science Medium Journal, contributing to the club’s knowledge-sharing endeavors and reaching an audience of over **100,000+**.",
-						"- Mentored peers and conducted weekly research paper reviews, staying abreast of advancements in *AI* and *Quantum Computing*.",
-						"- Offered mentorship to a cohort of **300+ participants** throughout the Data Science Hackathon."
+						"Managed and guided web development initiatives, creating an efficient [URL shortener](https://example.com) using **Next.js, MongoDB, and Redis** for optimized caching.",
+						"Achieved a substantial *170% reduction* in load time for the [Club’s website](https://dscommunity.in), optimizing it from **18.7 seconds** to approximately **1.5 seconds**.",
+						"Authored diverse [Medium articles](https://medium.com/data-science-community-srm) for the Data Science Medium Journal, contributing to the club’s knowledge-sharing endeavors and reaching an audience of over **100,000+**.",
+						"Mentored peers and conducted weekly research paper reviews, staying abreast of advancements in *AI* and *Quantum Computing*.",
+						"Offered mentorship to a cohort of **300+ participants** throughout the Data Science Hackathon."
 					],
 					"links": [
 						{
@@ -166,6 +166,25 @@
 						}
 					],
 					"image": "dsc.png",
+					"tags": ["All", "Web Development"]
+				},
+				{
+					"title": "GDSC SRM",
+					"designation": "Technical Team Member",
+					"location": "SRM, Chennai",
+					"duration": "May 2023 - Present",
+					"description": [
+						"Worked on the Events Management System, a web application that streamlined event management processes, ensuring seamless coordination and communication among the team members. The application was developed using **Next.js, TailwindCSS, and Firebase**.",
+						"Created a custom wrapper for **GCP's Cloud Storage** to facilitate efficient file uploads and downloads, enhancing the user experience and ensuring optimal performance."
+					],
+					"links": [
+						{
+							"icon": "mdi:web",
+							"text": "Website",
+							"link": "https://gdscsrm.com"
+						}
+					],
+					"image": "gdsc.png",
 					"tags": ["All", "Web Development"]
 				}
 			]

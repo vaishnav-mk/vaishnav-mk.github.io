@@ -26,9 +26,19 @@
 	displayTags = tags.length > 1 || displayTags;
 </script>
 
-<div class="flex flex-col items-center mt-28 dark:text-slate-400">
+<div class="flex flex-col items-center mt-28 dark:text-slate-400" id={title?.toLowerCase()}>
 	<div class="flex flex-col md:flex-row justify-between w-full items-center">
-		<h1 class="text-4xl font-bold text-start w-full">{title}</h1>
+		<a
+			class="text-4xl font-bold text-start w-full text-neutral-600 dark:text-slate-400 transition duration-300 group"
+			href={`#${title?.toLowerCase()}`}
+		>
+			<span>{title}</span>
+			<span
+				class="text-3xl font-bold text-neutral-600 dark:text-slate-400 hidden group-hover:inline"
+				>#</span
+			>
+		</a>
+
 		{#if displayTags}
 			<div class="flex gap-4 w-full md:justify-end justify-start items-center">
 				{#each tags as tag}

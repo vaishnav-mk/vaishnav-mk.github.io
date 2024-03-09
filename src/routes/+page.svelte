@@ -36,6 +36,6 @@
 		</main>
 	</div>
 	{#if FooterData}
-		<Footer data={FooterData}, {darkMode} />
+		<Footer data={FooterData} {darkMode} />
 	{/if}
 </div>
