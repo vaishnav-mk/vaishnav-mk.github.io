@@ -1,15 +1,30 @@
 <script>
 	import Markdown from 'svelte-exmarkdown';
 	import Toggle from './Buttons/Toggle.svelte';
+	import Icon from '@iconify/svelte';
 
 	export let data, darkMode;
+
+	const githubLink = 'https://github.com/vaishnav-mk/academic-portfolio';
 </script>
 
 <footer
-	class={`bg-zinc-100 p-6 z-10 border-t flex ${darkMode ? "justify-between" : "justify-center"} dark:bg-slate-800 dark:border-indigo-950 dark:text-slate-400`}
+	class={`bg-zinc-100 p-6 z-10 border-t flex items-center justify-between dark:bg-slate-800 dark:border-indigo-950 dark:text-slate-400`}
 >
-	<Markdown md={data} />
-	{#if darkMode}
-		<Toggle />
-	{/if}
+	<div class="flex md:flex-row flex-row items-center w-full justify-between">
+		<Markdown md={data} />
+		<div class="flex flex-col md:flex-row items-center justify-center gap-4">
+			<a
+				href={githubLink}
+				class="ml-4 text-lg font-semibold underline decoration-dotted flex items-center gap-2 hover:text-blue-700 dark:hover:text-blue-300 hover:rotate-12 transition-all duration-300"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Icon icon="akar-icons:github-fill" class="" />
+			</a>
+			{#if darkMode}
+				<Toggle />
+			{/if}
+		</div>
+	</div>
 </footer>

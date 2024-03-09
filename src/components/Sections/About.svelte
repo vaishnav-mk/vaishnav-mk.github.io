@@ -3,7 +3,7 @@
 	import Button from '../Buttons/Button.svelte';
 	export let data;
 
-	const socials = Object.entries(data?.socials || {});
+	const { description, links } = data?.about || {};
 </script>
 
 <div class="flex flex-col justify-between dark:text-slate-400">
@@ -11,13 +11,19 @@
 	<div class="border-t-2 w-full mt-2 dark:border-slate-500"></div>
 
 	<div class="mt-5 flex flex-wrap gap-4">
-		<p class="text-lg mb-4">
-			<SvelteMarkdown md={data?.about} />
-		</p>
-		{#each socials as [key, value]}
-			{#if ['Email', 'Github', 'LinkedIn', 'Twitter'].includes(key)}
-				<Button text={key} link={value} firstUpperCase {...value} />
-			{/if}
-		{/each}
+		{#if description}
+			{#each description as desc}
+				<p class="text-lg mb-4">
+					<SvelteMarkdown md={desc} />
+				</p>
+			{/each}
+		{/if}
+		{#if links}
+			<div class="flex flex-wrap gap-4 mt-4">
+				{#each links as link}
+					<Button {...link} />
+				{/each}
+			</div>
+		{/if}
 	</div>
 </div>

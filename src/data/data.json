@@ -1,11 +1,26 @@
 {
 	"info": {
-		"about": "I am an undergraduate student at SRM Intitute of Science & Technology, pursuing a bachelor’s degree in technology with specialization in Software Engineering. Currently, my research revolves around quantum key distribution protocols and error correction techniques. I am actively involved in investigating Quantum Key Distribution (QKD) under the mentorship of Dr. Gayathri M. Additionally, I contribute to the Machine Learning division at [NextTech Lab](https://nexttechlab.club), leveraging my expertise to explore the intersection of quantum computing and machine learning.",
+		"about": {
+			"description": [
+				"I am an undergraduate student at SRM Intitute of Science & Technology, pursuing a bachelor’s degree in technology with specialization in Software Engineering. Currently, my research revolves around quantum key distribution protocols and error correction techniques. I am actively involved in investigating Quantum Key Distribution (QKD) under the mentorship of Dr. Gayathri M. Additionally, I contribute to the Machine Learning division at [NextTech Lab](https://nexttechlab.club), leveraging my expertise to explore the intersection of quantum computing and machine learning."
+			],
+			"links": [
+				{
+					"icon": "mdi:document",
+					"text": "Resume",
+					"link": "https://www.vaishnav.one/resume"
+				},
+				{
+					"icon": "system-uicons:write",
+					"link": "https://medium.com/@wishee",
+					"text": "Medium Articles"
+				}
+			]
+		},
 		"name": "Vaishnav Manoj",
-        "image": "me.jpg",
+		"image": "me.jpg",
 		"location": "Chennai, India",
 		"university": "SRM Institute of Science & Technology",
-		"googleScholar": "https://scholar.google.com/citations?user=",
 		"socials": {
 			"Email": {
 				"icon": "ic:baseline-email",
@@ -13,23 +28,15 @@
 			},
 			"Twitter": {
 				"icon": "mdi:twitter",
-				"link": "https://twitter.com/vaishnav240204"
+				"link": "https://twitter.com/@wishee0"
 			},
 			"LinkedIn": {
 				"icon": "mdi:linkedin",
-				"link": "https://www.linkedin.com/in/vaishnav-manoj-2a3b3b1b3/"
+				"link": "https://www.linkedin.com/in/vaishnav-mk"
 			},
 			"Github": {
 				"icon": "mdi:github",
 				"link": "https://github.com/vaishnav-mk"
-			},
-			"Medium": {
-				"icon": "system-uicons:write",
-				"link": "https://medium.com/@wishee"
-			},
-			"Resume": {
-				"icon": "mdi:resume",
-				"link": "https://www.vaishnav.one/resume"
 			}
 		},
 		"darkMode": true,
@@ -54,8 +61,9 @@
 			"title": "Experience",
 			"data": [
 				{
-					"title": "Research Intern | Quantum Computing Lab",
-					"location": "SRM Institute of Science & Technology, Chennai",
+					"title": "Quantum Computing Lab",
+					"designation": "Research Intern",
+					"location": "SRM University, Chennai",
 					"duration": "February 2024 - Present",
 					"description": [
 						"Currently focused on developing an efficient method for data protection using Quantum Key Distribution (QKD) protocols.",
@@ -64,6 +72,7 @@
 					],
 					"links": [
 						{
+							"icon": "mdi:github",
 							"text": "Github Link",
 							"link": "https://github.com/vaishnav-mk/quantum-teleportation"
 						}
@@ -79,36 +88,34 @@
 				{
 					"title": "Quantum Teleportation",
 					"description": [
-						"Implemented the Quantum Teleportation algorithm using Qiskit and IBM Quantum Experience.",
-						"Used the IBM Quantum Experience to simulate the quantum teleportation circuit and visualize the results."
+						"Engineered a Quantum Data Teleportation system with **Qiskit** using 3 qubits, employing strategic Bell pair utilization and harnessing the principles of **Quantum Superposition** and **Quantum Entanglement**. Implemented a robust teleportation mechanism, showcasing expertise in quantum algorithms.",
+						"Incorporated insights from the ”Teleporting an unknown quantum state via dual classical and Einstein-Podolsky-Rosen channels” paper to enhance the performance of the system. Demonstrated a nuanced understanding of cutting-edge research, elevating the teleportation capabilities through dual classical and quantum channels.",
+						"Established 2 entangled qubits for secure and efficient quantum data teleportation between distant locations through strategic utilization of Bell pair utilization and the principles of **Quantum Superposition** and **Entanglement**.",
+						"Implemented 3-bit quantum error correction mechanisms to ensure data accuracy during teleportation processes.",
+						"Accelerated data teleportation time by a notable 12% by integrating CUDA Quantum, enhancing overall system efficiency and performance."
 					],
 					"links": [
 						{
+							"icon": "mdi:github",
 							"text": "Github Link",
-							"link": "https://google.com"
-						},
-						{
-							"text": "Deployed Link",
-							"link": "https://google.com"
+							"link": "https://github.com/vaishnav-mk/quantum-teleportation"
 						}
 					],
 					"image": "circuit.png",
 					"tags": ["Quantum"]
 				},
 				{
-					"title": "Hamiltonian Simulation",
+					"title": "Hamiltonian Grapher",
 					"description": [
-						"Implemented the Hamiltonian Simulation algorithm using Qiskit and IBM Quantum Experience.",
-						"Used the IBM Quantum Experience to simulate the Hamiltonian Simulation circuit and visualize the results."
+						"Implemented an efficient quantum algorithm using **Qiskit**, specifically applying the Variational Quantum Eigensolver (VQE) algorithm with the TwoLocal ansatz and an entanglement structure for Hamiltonian analysis. This involved architecting a robust quantum circuit tailored for analyzing Hamiltonians, enabling accurate eigenvalue computations.",
+						"Utilized the Simultaneous Perturbation Stochastic Approximation (SPSA) algorithm to optimize the ansatz further, ensuring precision in eigenvalue computations. By fine-tuning the ansatz parameters, the algorithm achieved optimal performance in quantum computations, particularly in handling complex eigenstates and eigenvalues.",
+						"Architected a responsive web application using **FastAPI**, **Next.js**, and **TailwindCSS** to complement the quantum algorithm. The application provides seamless user interaction and visual appeal, allowing users to input Hamiltonian parameters and visualize the corresponding quantum states and eigenvalues in real-time."
 					],
 					"links": [
 						{
+							"icon": "mdi:github",
 							"text": "Github Link",
-							"link": "https://google.com"
-						},
-						{
-							"text": "Deployed Link",
-							"link": "https://google.com"
+							"link": "https://github.com/vaishnav-mk/hamiltonian-grapher"
 						}
 					],
 					"image": "hamiltonian.png",
@@ -120,13 +127,18 @@
 			"title": "Communities",
 			"data": [
 				{
-					"title": "NextTech Lab",
+					"title": "Next Tech Lab",
+					"designation": "Member - McCarthy Lab",
+					"location": "Chennai, IN",
+					"duration": "September 2023 - Present",
 					"description": [
-						"Contributing to the Machine Learning division at NextTech Lab, leveraging my expertise to explore the intersection of quantum computing and machine learning.",
-						"Currently working on a project that involves the development of a Quantum Machine Learning model using Qiskit and IBM Quantum Experience."
+						"- Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I orchestrated seamless project collaboration, driving cutting-edge research in **AI** and **Quantum Computing**.",
+						"- Developed Next Tech Lab’s website using **Next.js, TailwindCSS, and Sanity.io CMS**, achieving a perfect **100%** score on Lighthouse performance metrics, ensuring modern and optimized user experience.",
+						"- Created the **NTL Quest Site**, a secret recruiting challenge, based on the **5 labs** under Next Tech Lab."
 					],
 					"links": [
 						{
+							"icon": "mdi:web",
 							"text": "Website",
 							"link": "https://nexttechlab.club"
 						}
@@ -136,17 +148,25 @@
 				},
 				{
 					"title": "Data Science Community",
+					"designation": "Research Supervisor",
+					"location": "SRM, Chennai",
+					"duration": "December 2022 - Present",
 					"description": [
-                        "lorem ipsum"
+						"- Managed and guided web development initiatives, creating an efficient [URL shortener](https://example.com) using **Next.js, MongoDB, and Redis** for optimized caching.",
+						"- Achieved a substantial *170% reduction* in load time for the [Club’s website](https://dscommunity.in), optimizing it from **18.7 seconds** to approximately **1.5 seconds**.",
+						"- Authored diverse [Medium articles](https://medium.com/data-science-community-srm) for the Data Science Medium Journal, contributing to the club’s knowledge-sharing endeavors and reaching an audience of over **100,000+**.",
+						"- Mentored peers and conducted weekly research paper reviews, staying abreast of advancements in *AI* and *Quantum Computing*.",
+						"- Offered mentorship to a cohort of **300+ participants** throughout the Data Science Hackathon."
 					],
 					"links": [
 						{
+							"icon": "mdi:web",
 							"text": "Website",
 							"link": "https://dscommunity.in"
 						}
 					],
 					"image": "dsc.png",
-					"tags": ["All", "Machine Learning", "Web Development"]
+					"tags": ["All", "Web Development"]
 				}
 			]
 		}
