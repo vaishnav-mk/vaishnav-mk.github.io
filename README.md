@@ -8,7 +8,7 @@
    ```bash
     git clone https://github.com/vaishnav-mk/academic-portfolio
     cd academic-portfolio
-    npm install
+    npm install --legacy-peer-deps
     npm run dev
    ```
 
