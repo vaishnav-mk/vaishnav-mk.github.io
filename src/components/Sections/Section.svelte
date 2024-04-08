@@ -26,10 +26,10 @@
 	displayTags = tags.length > 1 || displayTags;
 </script>
 
-<div class="flex flex-col items-center mt-28 dark:text-slate-400" id={title?.toLowerCase()}>
+<div class="flex flex-col items-center mt-28 dark:text-stone-300" id={title?.toLowerCase()}>
 	<div class="flex flex-col md:flex-row justify-between w-full items-center">
 		<a
-			class="text-4xl font-bold text-start w-full text-neutral-600 dark:text-slate-400 transition duration-300 group"
+			class="text-4xl font-bold text-start w-full text-neutral-600 dark:text-stone-300 transition duration-300 group"
 			href={`#${title?.toLowerCase()}`}
 		>
 			<span>{title}</span>
@@ -45,8 +45,8 @@
 					<button
 						class={`text-lg font-thin cursor-pointer ${
 							selectedTag === tag
-								? 'text-zinc-800 underline underline-offset-2 dark:text-slate-300'
-								: 'text-neutral-600 dark:text-slate-400'
+								? 'text-zinc-800 underline underline-offset-2 dark:text-stone-300'
+								: 'text-neutral-600 dark:text-stone-300'
 						}`}
 						on:click={() => (selectedTag = tag)}
 					>
@@ -59,7 +59,7 @@
 			</div>
 		{/if}
 	</div>
-	<div class="border-t-2 w-full mt-2 dark:border-slate-500"></div>
+	<div class="border-t-2 w-full mt-2 dark:border-neutral-700"></div>
 	{#each items.slice(0, showAll ? undefined : 3) as item}
 		{#if item.tags.includes(selectedTag)}
 			<div transition:slide={{ amount: 10 }} class="flex flex-col w-full gap-4 mt-5">

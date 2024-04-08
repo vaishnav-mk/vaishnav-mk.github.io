@@ -6,9 +6,9 @@
 	const { description, links } = data?.about || {};
 </script>
 
-<div class="flex flex-col justify-between dark:text-slate-400">
+<div class="flex flex-col justify-between dark:text-zinc-300">
 	<h1 class="text-4xl font-bold text-start">About Me</h1>
-	<div class="border-t-2 w-full mt-2 dark:border-slate-500"></div>
+	<div class="border-t-2 w-full mt-2 dark:border-neutral-700"></div>
 
 	<div class="mt-5 flex flex-wrap gap-4">
 		{#if description}

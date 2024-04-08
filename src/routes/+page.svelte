@@ -13,7 +13,7 @@
 	const { navbar: NavData, footer: FooterData, darkMode } = info;
 </script>
 
-<div class="dark:bg-slate-900 dark:text-white">
+<div class="dark:bg-zinc-900 dark:text-white">
 	{#if NavData}
 		<Nav {NavData} />
 	{/if}

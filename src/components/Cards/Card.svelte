@@ -8,7 +8,7 @@
 	import Markdown from 'svelte-exmarkdown';
 </script>
 
-<div class="border rounded-lg dark:bg-gray-900 dark:border-slate-500">
+<div class="border rounded-lg dark:bg-zinc-900 dark:border-neutral-700">
 	<div class="flex md:flex-row flex-col p-4 gap-4">
 		<div class="md:w-1/4 rounded-lg">
 			<img src={img_url} alt="Experience Logo" class="rounded-lg" />

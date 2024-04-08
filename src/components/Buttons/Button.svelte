@@ -13,7 +13,7 @@
 {:else}
 	<a
 		href={link}
-		class="text-blue-700 bg-blue-100 rounded-md px-4 py-2 hover:bg-blue-200 transition-all duration-300 justify-center flex items-center gap-2 dark:bg-gray-700 dark:text-slate-400 dark:hover:bg-gray-600"
+		class="text-blue-700 bg-blue-100 rounded-md px-4 py-2 hover:bg-blue-200 transition-all duration-300 justify-center flex items-center gap-2 dark:bg-neutral-800 dark:text-blue-500 dark:hover:bg-zinc-700"
 		target="_blank"
 		rel="noopener noreferrer"
 	>

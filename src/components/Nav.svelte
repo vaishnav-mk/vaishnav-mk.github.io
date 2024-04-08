@@ -8,7 +8,7 @@
 </script>
 
 <nav
-	class="bg-zinc-100 p-6 z-10 border-b dark:bg-slate-800 dark:border-indigo-950 dark:text-slate-400"
+	class="bg-zinc-100 p-6 z-10 border-b dark:bg-[#1c1e20] dark:border-neutral-700 dark:text-zinc-300"
 >
 	<div class="container mx-auto max-w-7xl flex justify-between gap-10">
 		<div class="flex items-center gap-4">
@@ -20,7 +20,7 @@
 		<div class="flex gap-4 items-center">
 			{#each links as { title, url }, index}
 				<a
-					class="text-zinc-400 text-lg font-semibold link-hover-border"
+					class="text-zinc-300 text-lg font-semibold link-hover-border"
 					target="_blank"
 					rel="noopener noreferrer"
 					href={url}>{title}</a
