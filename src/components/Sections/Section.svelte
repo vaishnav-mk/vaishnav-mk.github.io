@@ -61,7 +61,7 @@
 	</div>
 	<div class="border-t-2 w-full mt-2 dark:border-neutral-700"></div>
 	{#each items.slice(0, showAll ? undefined : 3) as item}
-		{#if item.tags.includes(selectedTag)}
+		{#if item?.tags?.includes(selectedTag)}
 			<div transition:slide={{ amount: 10 }} class="flex flex-col w-full gap-4 mt-5">
 				<Card {...item} />
 			</div>
