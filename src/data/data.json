@@ -14,6 +14,11 @@
 					"icon": "system-uicons:write",
 					"link": "https://medium.com/@wishee",
 					"text": "Medium Articles"
+				},
+				{
+					"icon": "mdi:web",
+					"link": "https://vaishnav.one",
+					"text": "Web Portfolio"
 				}
 			]
 		},
