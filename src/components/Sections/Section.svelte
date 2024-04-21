@@ -9,6 +9,14 @@
 
 	export let displayTags = false;
 	export let showAll = false;
+	export let maxDisplay = 3;
+	export let addAllTag = false;
+
+	if (addAllTag) {
+		items.forEach((item) => {
+			item.tags = ['All', ...new Set(item.tags)];
+		});
+	}
 
 	let tags = [...new Set(items.flatMap((item) => item.tags))];
 	let selectedTag = tags[0];
@@ -18,7 +26,7 @@
 	};
 
 	onMount(() => {
-		if (items.length <= 3) {
+		if (items.length <= maxDisplay) {
 			showAll = true;
 		}
 	});
@@ -60,14 +68,15 @@
 		{/if}
 	</div>
 	<div class="border-t-2 w-full mt-2 dark:border-neutral-700"></div>
-	{#each items.slice(0, showAll ? undefined : 3) as item}
-		{#if item?.tags?.includes(selectedTag)}
+	{#each items as item, index}
+		{#if item?.tags?.includes(selectedTag) && (showAll || index < maxDisplay)}
 			<div transition:slide={{ amount: 10 }} class="flex flex-col w-full gap-4 mt-5">
 				<Card {...item} />
 			</div>
 		{/if}
 	{/each}
-	{#if items.filter((item) => item.tags.includes(selectedTag)).length > 3}
+
+	{#if items.filter((item) => item.tags.includes(selectedTag)).length > maxDisplay}
 		<ShowButton onClick={toggleShowAll} text={showAll ? 'Show less' : 'Show more'} />
 	{/if}
 </div>

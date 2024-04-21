@@ -9,8 +9,9 @@
 	import MobileSidebar from '../components/MobileSidebar.svelte';
 	import Footer from '../components/Footer.svelte';
 
-	const { info, sections } = data;
-	const { navbar: NavData, footer: FooterData, darkMode } = info;
+	const { info, sections, config } = data;
+	const { navbar: NavData, footer: FooterData } = info;
+	const { darkMode, maxDisplay, addAllTag } = config;
 </script>
 
 <div class="dark:bg-zinc-900 dark:text-white">
@@ -29,7 +30,7 @@
 						<About data={info} />
 					{/if}
 					{#each sections as sectionData}
-						<Section {sectionData} />
+						<Section {sectionData} {maxDisplay} addAllTag={sectionData.addAllTag ?? addAllTag} />
 					{/each}
 				</div>
 			</div>

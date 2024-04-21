@@ -1,3 +1,7 @@
+config:
+  darkMode: true
+  maxDisplay: 3
+  addAllTag: true
 info:
   about:
     description:
@@ -29,7 +33,6 @@ info:
     Github:
       icon: "mdi:github"
       link: "https://github.com/vaishnav-mk"
-  darkMode: true
   footer: "Quantum leaps in ML, fueled by [recursive](/) exploration, unlock the universe's potential."
   navbar:
     title: "Vaishnav Manoj"
@@ -57,7 +60,7 @@ sections:
             text: "DREAM:lab"
           - link: "https://doi.org/10.1109/eScience55777.2022.00057"
             text: "XFaaS Paper [eScience 2022, CCGRID 2023]"
-        tags: ["All", "Cloud"]
+        tags: ["Cloud"]
       - title: "Quantum Computing Lab"
         designation: "Research Assistant"
         location: "SRM University, Chennai"
@@ -71,7 +74,7 @@ sections:
             text: "Github Link"
             link: "https://github.com/vaishnav-mk/quantum-teleportation"
         image: "srm2.png"
-        tags: ["All", "Quantum"]
+        tags: ["Quantum"]
   - title: "Projects"
     data:
       - title: "Quantum Teleportation"
@@ -87,6 +90,7 @@ sections:
             link: "https://github.com/vaishnav-mk/quantum-teleportation"
         image: "circuit.png"
         tags: ["Quantum"]
+
       - title: "Hamiltonian Grapher"
         description:
           - "Implemented an efficient quantum algorithm using **Qiskit**, specifically applying the Variational Quantum Eigensolver (VQE) algorithm with the TwoLocal ansatz and an entanglement structure for Hamiltonian analysis. This involved architecting a robust quantum circuit tailored for analyzing Hamiltonians, enabling accurate eigenvalue computations."
@@ -113,7 +117,7 @@ sections:
             text: "Website"
             link: "https://nexttechlab.club"
         image: "ntl.png"
-        tags: ["All", "Machine Learning"]
+        tags: ["Machine Learning"]
       - title: "Data Science Community"
         designation: "Research Supervisor"
         location: "SRM, Chennai"
@@ -129,7 +133,7 @@ sections:
             text: "Website"
             link: "https://dscommunity.in"
         image: "dsc.png"
-        tags: ["All", "Web Development"]
+        tags: ["Web Development"]
       - title: "GDSC SRM"
         designation: "Technical Team Member"
         location: "SRM, Chennai"
@@ -142,4 +146,4 @@ sections:
             text: "Website"
             link: "https://gdscsrm.com"
         image: "gdsc.png"
-        tags: ["All", "Web Development"]
+        tags: ["Web Development"]
