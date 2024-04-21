@@ -1,4 +1,6 @@
 <script>
+	export let data;
+
 	import About from '../components/Sections/About.svelte';
 	import Section from '../components/Sections/Section.svelte';
 
@@ -6,8 +8,6 @@
 	import Sidebar from '../components/Sidebar.svelte';
 	import MobileSidebar from '../components/MobileSidebar.svelte';
 	import Footer from '../components/Footer.svelte';
-
-	import data from '../data/data.json';
 
 	const { info, sections } = data;
 	const { navbar: NavData, footer: FooterData, darkMode } = info;
