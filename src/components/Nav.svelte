@@ -2,7 +2,7 @@
 	export let NavData;
 	const { title, links, icon, separator } = NavData;
 
-	const images = import.meta.glob('$lib/images/*.png', { eager: true });
+	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,gif}`, { eager: true });
 
 	const img_url = images[`/src/lib/images/${icon || 'srm2.png'}`]?.default;
 </script>

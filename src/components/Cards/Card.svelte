@@ -2,7 +2,7 @@
 	import Button from '../Buttons/Button.svelte';
 	export let title, description, links, image, location, duration, designation;
 
-	const images = import.meta.glob(`$lib/images/*.png`, { eager: true });
+	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,gif}`, { eager: true });
 
 	const img_url = images[`/src/lib/images/${image || 'srm2.png'}`]?.default;
 	import Markdown from 'svelte-exmarkdown';

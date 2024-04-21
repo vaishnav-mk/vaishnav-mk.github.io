@@ -1,7 +1,7 @@
 <script>
 	export let data;
 
-	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,PNG,JPEG}`, { eager: true });
+	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,gif}`, { eager: true });
 	const img_url = images[`/src/lib/images/${data?.image || 'srm2.png'}`]?.default;
 </script>
 
