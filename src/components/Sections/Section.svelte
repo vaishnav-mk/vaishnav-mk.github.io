@@ -67,7 +67,7 @@
 			</div>
 		{/if}
 	{/each}
-	{#if items.length > 3}
+	{#if items.filter((item) => item.tags.includes(selectedTag)).length > 3}
 		<ShowButton onClick={toggleShowAll} text={showAll ? 'Show less' : 'Show more'} />
 	{/if}
 </div>
