@@ -90,7 +90,6 @@ sections:
             link: "https://github.com/vaishnav-mk/quantum-teleportation"
         image: "circuit.png"
         tags: ["Quantum"]
-
       - title: "Hamiltonian Grapher"
         description:
           - "Implemented an efficient quantum algorithm using **Qiskit**, specifically applying the Variational Quantum Eigensolver (VQE) algorithm with the TwoLocal ansatz and an entanglement structure for Hamiltonian analysis. This involved architecting a robust quantum circuit tailored for analyzing Hamiltonians, enabling accurate eigenvalue computations."

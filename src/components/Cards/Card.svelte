@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import Markdown from 'svelte-exmarkdown';
 	import Button from '../Buttons/Button.svelte';
 

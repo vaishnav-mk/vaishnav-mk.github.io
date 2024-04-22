@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	export let data;
 
 	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,gif}`, { eager: true });

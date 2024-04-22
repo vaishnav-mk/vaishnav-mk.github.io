@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import Button from './Buttons/Button.svelte';
 	import Icon from '@iconify/svelte';
 	export let data;
