@@ -2,10 +2,17 @@
 	import Markdown from 'svelte-exmarkdown';
 	import Button from '../Buttons/Button.svelte';
 
-	export let title, description, links, image, location, duration, designation, onHover;
+	export let title,
+		description,
+		links,
+		image,
+		location,
+		duration,
+		designation,
+		onHover,
+		defaultAsset;
 
-	let img_url = `/images/${image || 'srm2.png'}`;
-	console.log({img_url})
+	let img_url = `/images/${image ?? defaultAsset}`;
 
 	let values = { title, description, links, image, location, duration, designation };
 	let originalValues = {};
@@ -17,7 +24,7 @@
 	function handleHover() {
 		if (onHover) {
 			const { image: hoverImage, ...hoverProps } = onHover[0];
-			img_url = `/images/${hoverImage || image || 'srm2.png'}`;
+			img_url = `/images/${hoverImage ?? image ?? defaultAsset}`;
 			Object.keys(hoverProps).forEach((prop) => {
 				if (prop in originalValues) {
 					values[prop] = hoverProps[prop];
@@ -27,7 +34,7 @@
 	}
 
 	function handleMouseLeave() {
-		img_url = `/images/${image || 'srm2.png'}`;
+		img_url = `/images/${image ?? defaultAsset}`;
 		values = { ...originalValues };
 	}
 

@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 	import Card from '../Cards/Card.svelte';
 
-	export let sectionData;
+	export let sectionData, defaultAsset;
 	const { title, data: items } = sectionData;
 
 	export let displayTags = false;
@@ -71,7 +71,7 @@
 	{#each items as item, index}
 		{#if item?.tags?.includes(selectedTag) && (showAll || index < maxDisplay)}
 			<div transition:slide={{ amount: 10 }} class="flex flex-col w-full gap-4 mt-5">
-				<Card {...item} />
+				<Card {...item} {defaultAsset} />
 			</div>
 		{/if}
 	{/each}

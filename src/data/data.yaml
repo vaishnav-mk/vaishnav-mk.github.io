@@ -2,7 +2,16 @@ config:
   darkMode: true
   maxDisplay: 3
   addAllTag: true
+  defaultAsset: 'favicon.png'
 info:
+  sidebar:
+    description:
+      - 'Bachelor of Technology undergraduate at SRMIST'
+    details:
+      - icon: 'mdi:location'
+        text: 'Chennai, India'
+      - icon: 'mdi:university'
+        text: 'SRM University'
   about:
     description:
       - "I am an undergraduate student at SRM Intitute of Science & Technology, pursuing a bachelor’s degree in technology with specialization in Software Engineering. Currently, my research revolves around quantum key distribution protocols and error correction techniques. I am actively involved in investigating Quantum Key Distribution (QKD) under the mentorship of Dr. Gayathri M. Additionally, I contribute to the Machine Learning division at [NextTech Lab](https://nexttechlab.club), leveraging my expertise to explore the intersection of quantum computing and machine learning. At the [Indian Institute of Science](https://iisc.ac.in/)'s [DREAM Lab](https://dream-lab.in/) I contribute to XFaaS, a system enabling deployment of FaaS workflows across multiple cloud platforms, promoting portability and cost-efficiency"

@@ -1,8 +1,8 @@
 <script>
-	export let NavData;
+	export let NavData, defaultAsset;
 	const { title, links, icon, separator } = NavData;
 
-	const img_url = `/images/${icon || 'srm2.png'}`;
+	const img_url = `/images/${icon || defaultAsset}`;
 </script>
 
 <nav

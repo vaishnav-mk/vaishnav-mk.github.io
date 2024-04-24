@@ -11,7 +11,7 @@
 
 	const { info, sections, config } = data;
 	const { navbar: NavData, footer: FooterData } = info;
-	const { darkMode, maxDisplay, addAllTag } = config;
+	const { darkMode, maxDisplay, addAllTag, defaultAsset } = config;
 </script>
 
 <div class="dark:bg-zinc-900 dark:text-white">
@@ -30,7 +30,12 @@
 						<About data={info} />
 					{/if}
 					{#each sections as sectionData}
-						<Section {sectionData} {maxDisplay} addAllTag={sectionData.addAllTag ?? addAllTag} />
+						<Section
+							{sectionData}
+							{maxDisplay}
+							addAllTag={sectionData.addAllTag ?? addAllTag}
+							{defaultAsset}
+						/>
 					{/each}
 				</div>
 			</div>
