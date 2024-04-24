@@ -7,142 +7,142 @@ info:
     description:
       - "I am an undergraduate student at SRM Intitute of Science & Technology, pursuing a bachelor’s degree in technology with specialization in Software Engineering. Currently, my research revolves around quantum key distribution protocols and error correction techniques. I am actively involved in investigating Quantum Key Distribution (QKD) under the mentorship of Dr. Gayathri M. Additionally, I contribute to the Machine Learning division at [NextTech Lab](https://nexttechlab.club), leveraging my expertise to explore the intersection of quantum computing and machine learning. At the [Indian Institute of Science](https://iisc.ac.in/)'s [DREAM Lab](https://dream-lab.in/) I contribute to XFaaS, a system enabling deployment of FaaS workflows across multiple cloud platforms, promoting portability and cost-efficiency"
     links:
-      - icon: "mdi:document"
-        text: "Resume"
-        link: "https://www.vaishnav.one/resume"
-      - icon: "system-uicons:write"
-        link: "https://medium.com/@wishee"
-        text: "Medium Articles"
-      - icon: "mdi:web"
-        link: "https://vaishnav.one"
-        text: "Web Portfolio"
-  name: "Vaishnav Manoj"
-  image: "me.jpg"
-  location: "Chennai, India"
-  university: "SRM Institute of Science & Technology"
+      - icon: 'mdi:document'
+        text: 'Resume'
+        link: 'https://www.vaishnav.one/resume'
+      - icon: 'system-uicons:write'
+        link: 'https://medium.com/@wishee'
+        text: 'Medium Articles'
+      - icon: 'mdi:web'
+        link: 'https://vaishnav.one'
+        text: 'Web Portfolio'
+  name: 'Vaishnav Manoj'
+  image: 'me.jpg'
+  location: 'Chennai, India'
+  university: 'SRM Institute of Science & Technology'
   socials:
     Email:
-      icon: "ic:baseline-email"
-      link: "mailto:vaishnav240204@gmail.com"
+      icon: 'ic:baseline-email'
+      link: 'mailto:vaishnav240204@gmail.com'
     Twitter:
-      icon: "mdi:twitter"
-      link: "https://twitter.com/@wishee0"
+      icon: 'mdi:twitter'
+      link: 'https://twitter.com/@wishee0'
     LinkedIn:
-      icon: "mdi:linkedin"
-      link: "https://www.linkedin.com/in/vaishnav-mk"
+      icon: 'mdi:linkedin'
+      link: 'https://www.linkedin.com/in/vaishnav-mk'
     Github:
-      icon: "mdi:github"
-      link: "https://github.com/vaishnav-mk"
+      icon: 'mdi:github'
+      link: 'https://github.com/vaishnav-mk'
   footer: "Quantum leaps in ML, fueled by [recursive](/) exploration, unlock the universe's potential."
   navbar:
-    title: "Vaishnav Manoj"
-    separator: "/"
+    title: 'Vaishnav Manoj'
+    separator: '/'
     links:
-      - title: "Portfolio"
-        url: "https://vaishnav.one"
-      - title: "Resume"
-        url: "https://www.vaishnav.one/view-resume"
+      - title: 'Portfolio'
+        url: 'https://vaishnav.one'
+      - title: 'Resume'
+        url: 'https://www.vaishnav.one/view-resume'
 sections:
-  - title: "Experience"
+  - title: 'Experience'
     data:
-      - title: "Distributed Research on Emerging Applications & Machines (DREAM) lab"
-        designation: "Research Intern"
-        location: "Indian Institute of Science, Bangalore"
-        duration: "June 2024 - Present"
+      - title: 'Distributed Research on Emerging Applications & Machines (DREAM) lab'
+        designation: 'Research Intern'
+        location: 'Indian Institute of Science, Bangalore'
+        duration: 'June 2024 - Present'
         description:
           - "  - Design code wrappers to seamlessly integrate FaaS functions with different cloud providers' native FaaS engines."
-          - "  - Develop workflow orchestration logic to coordinate execution of FaaS functions across clouds."
-          - "  - Implement intelligent function fusion techniques to reduce workflow execution latency and optimize costs."
-          - "  - Create placement strategies to strategically deploy functions across cloud providers for optimal performance and cost efficiency."
-        image: "iisc.png"
+          - '  - Develop workflow orchestration logic to coordinate execution of FaaS functions across clouds.'
+          - '  - Implement intelligent function fusion techniques to reduce workflow execution latency and optimize costs.'
+          - '  - Create placement strategies to strategically deploy functions across cloud providers for optimal performance and cost efficiency.'
+        image: 'iisc.png'
         links:
-          - link: "https://dream-lab.in/hybrid-clouds-quantum"
-            text: "DREAM:lab"
-          - link: "https://doi.org/10.1109/eScience55777.2022.00057"
-            text: "XFaaS Paper [eScience 2022, CCGRID 2023]"
-        tags: ["Cloud"]
-      - title: "Quantum Computing Lab"
-        designation: "Research Assistant"
-        location: "SRM University, Chennai"
-        duration: "February 2024 - Present"
+          - link: 'https://dream-lab.in/hybrid-clouds-quantum'
+            text: 'DREAM:lab'
+          - link: 'https://doi.org/10.1109/eScience55777.2022.00057'
+            text: 'XFaaS Paper [eScience 2022, CCGRID 2023]'
+        tags: ['Cloud']
+      - title: 'Quantum Computing Lab'
+        designation: 'Research Assistant'
+        location: 'SRM University, Chennai'
+        duration: 'February 2024 - Present'
         description:
-          - "Currently focused on developing an efficient method for data protection using Quantum Key Distribution (QKD) protocols."
+          - 'Currently focused on developing an efficient method for data protection using Quantum Key Distribution (QKD) protocols.'
           - "Engaged in the development of a Quantum Key Distribution protocol utilizing Qiskit and IBM Quantum Experience's Quantum Computers for practical implementation."
-          - "Guided by Dr. Gayathri, Assistant Professor in the Department of Computer Science and Engineering at SRMIST, for insightful advice and direction."
+          - 'Guided by Dr. Gayathri, Assistant Professor in the Department of Computer Science and Engineering at SRMIST, for insightful advice and direction.'
         links:
-          - icon: "mdi:github"
-            text: "Github Link"
-            link: "https://github.com/vaishnav-mk/quantum-teleportation"
-        image: "srm2.png"
-        tags: ["Quantum"]
-  - title: "Projects"
+          - icon: 'mdi:github'
+            text: 'Github Link'
+            link: 'https://github.com/vaishnav-mk/quantum-teleportation'
+        image: 'srm2.png'
+        tags: ['Quantum']
+  - title: 'Projects'
     data:
-      - title: "Quantum Teleportation"
+      - title: 'Quantum Teleportation'
         description:
-          - "Engineered a Quantum Data Teleportation system with **Qiskit** using 3 qubits, employing strategic Bell pair utilization and harnessing the principles of **Quantum Superposition** and **Quantum Entanglement**. Implemented a robust teleportation mechanism, showcasing expertise in quantum algorithms."
-          - "Incorporated insights from the ”Teleporting an unknown quantum state via dual classical and Einstein-Podolsky-Rosen channels” paper to enhance the performance of the system. Demonstrated a nuanced understanding of cutting-edge research, elevating the teleportation capabilities through dual classical and quantum channels."
-          - "Established 2 entangled qubits for secure and efficient quantum data teleportation between distant locations through strategic utilization of Bell pair utilization and the principles of **Quantum Superposition** and **Entanglement**."
-          - "Implemented 3-bit quantum error correction mechanisms to ensure data accuracy during teleportation processes."
-          - "Accelerated data teleportation time by a notable 12% by integrating CUDA Quantum, enhancing overall system efficiency and performance."
+          - 'Engineered a Quantum Data Teleportation system with **Qiskit** using 3 qubits, employing strategic Bell pair utilization and harnessing the principles of **Quantum Superposition** and **Quantum Entanglement**. Implemented a robust teleportation mechanism, showcasing expertise in quantum algorithms.'
+          - 'Incorporated insights from the ”Teleporting an unknown quantum state via dual classical and Einstein-Podolsky-Rosen channels” paper to enhance the performance of the system. Demonstrated a nuanced understanding of cutting-edge research, elevating the teleportation capabilities through dual classical and quantum channels.'
+          - 'Established 2 entangled qubits for secure and efficient quantum data teleportation between distant locations through strategic utilization of Bell pair utilization and the principles of **Quantum Superposition** and **Entanglement**.'
+          - 'Implemented 3-bit quantum error correction mechanisms to ensure data accuracy during teleportation processes.'
+          - 'Accelerated data teleportation time by a notable 12% by integrating CUDA Quantum, enhancing overall system efficiency and performance.'
         links:
-          - icon: "mdi:github"
-            text: "Github Link"
-            link: "https://github.com/vaishnav-mk/quantum-teleportation"
-        image: "circuit.png"
-        tags: ["Quantum"]
-      - title: "Hamiltonian Grapher"
+          - icon: 'mdi:github'
+            text: 'Github Link'
+            link: 'https://github.com/vaishnav-mk/quantum-teleportation'
+        image: 'circuit.png'
+        tags: ['Quantum']
+      - title: 'Hamiltonian Grapher'
         description:
-          - "Implemented an efficient quantum algorithm using **Qiskit**, specifically applying the Variational Quantum Eigensolver (VQE) algorithm with the TwoLocal ansatz and an entanglement structure for Hamiltonian analysis. This involved architecting a robust quantum circuit tailored for analyzing Hamiltonians, enabling accurate eigenvalue computations."
-          - "Utilized the Simultaneous Perturbation Stochastic Approximation (SPSA) algorithm to optimize the ansatz further, ensuring precision in eigenvalue computations. By fine-tuning the ansatz parameters, the algorithm achieved optimal performance in quantum computations, particularly in handling complex eigenstates and eigenvalues."
-          - "Architected a responsive web application using **FastAPI**, **Next.js**, and **TailwindCSS** to complement the quantum algorithm. The application provides seamless user interaction and visual appeal, allowing users to input Hamiltonian parameters and visualize the corresponding quantum states and eigenvalues in real-time."
+          - 'Implemented an efficient quantum algorithm using **Qiskit**, specifically applying the Variational Quantum Eigensolver (VQE) algorithm with the TwoLocal ansatz and an entanglement structure for Hamiltonian analysis. This involved architecting a robust quantum circuit tailored for analyzing Hamiltonians, enabling accurate eigenvalue computations.'
+          - 'Utilized the Simultaneous Perturbation Stochastic Approximation (SPSA) algorithm to optimize the ansatz further, ensuring precision in eigenvalue computations. By fine-tuning the ansatz parameters, the algorithm achieved optimal performance in quantum computations, particularly in handling complex eigenstates and eigenvalues.'
+          - 'Architected a responsive web application using **FastAPI**, **Next.js**, and **TailwindCSS** to complement the quantum algorithm. The application provides seamless user interaction and visual appeal, allowing users to input Hamiltonian parameters and visualize the corresponding quantum states and eigenvalues in real-time.'
         links:
-          - icon: "mdi:github"
-            text: "Github Link"
-            link: "https://github.com/vaishnav-mk/hamiltonian-grapher"
-        image: "hamiltonian.png"
-        tags: ["Quantum", "Full-Stack"]
-  - title: "Communities"
+          - icon: 'mdi:github'
+            text: 'Github Link'
+            link: 'https://github.com/vaishnav-mk/hamiltonian-grapher'
+        image: 'hamiltonian.png'
+        tags: ['Quantum', 'Full-Stack']
+  - title: 'Communities'
     data:
-      - title: "Next Tech Lab"
-        designation: "Member - McCarthy Lab"
-        location: "Chennai, IN"
-        duration: "September 2023 - Present"
+      - title: 'Next Tech Lab'
+        designation: 'Member - McCarthy Lab'
+        location: 'Chennai, IN'
+        duration: 'September 2023 - Present'
         description:
-          - "Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I orchestrated seamless project collaboration, driving cutting-edge research in **AI** and **Quantum Computing**."
-          - "Developed Next Tech Lab’s website using **Next.js, TailwindCSS, and Sanity.io CMS**, achieving a perfect **100%** score on Lighthouse performance metrics, ensuring modern and optimized user experience."
-          - "Created the **NTL Quest Site**, a secret recruiting challenge, based on the **5 labs** under Next Tech Lab."
+          - 'Part of the distinguished QS Award-winning lab, recognized twice for research excellence. Acknowledged for achievements, with a focus on advanced machine learning methods within the renowned **McCarthy Lab** where I orchestrated seamless project collaboration, driving cutting-edge research in **AI** and **Quantum Computing**.'
+          - 'Developed Next Tech Lab’s website using **Next.js, TailwindCSS, and Sanity.io CMS**, achieving a perfect **100%** score on Lighthouse performance metrics, ensuring modern and optimized user experience.'
+          - 'Created the **NTL Quest Site**, a secret recruiting challenge, based on the **5 labs** under Next Tech Lab.'
         links:
-          - icon: "mdi:web"
-            text: "Website"
-            link: "https://nexttechlab.club"
-        image: "ntl.png"
-        tags: ["Machine Learning"]
-      - title: "Data Science Community"
-        designation: "Research Supervisor"
-        location: "SRM, Chennai"
-        duration: "December 2022 - Present"
+          - icon: 'mdi:web'
+            text: 'Website'
+            link: 'https://nexttechlab.club'
+        image: 'ntl.png'
+        tags: ['Machine Learning']
+      - title: 'Data Science Community'
+        designation: 'Research Supervisor'
+        location: 'SRM, Chennai'
+        duration: 'December 2022 - Present'
         description:
-          - "Managed and guided web development initiatives, creating an efficient [URL shortener](https://example.com) using **Next.js, MongoDB, and Redis** for optimized caching."
-          - "Achieved a substantial *170% reduction* in load time for the [Club’s website](https://dscommunity.in), optimizing it from **18.7 seconds** to approximately **1.5 seconds**."
-          - "Authored diverse [Medium articles](https://medium.com/data-science-community-srm) for the Data Science Medium Journal, contributing to the club’s knowledge-sharing endeavors and reaching an audience of over **100,000+**."
-          - "Mentored peers and conducted weekly research paper reviews, staying abreast of advancements in *AI* and *Quantum Computing*."
-          - "Offered mentorship to a cohort of **300+ participants** throughout the Data Science Hackathon."
+          - 'Managed and guided web development initiatives, creating an efficient [URL shortener](https://example.com) using **Next.js, MongoDB, and Redis** for optimized caching.'
+          - 'Achieved a substantial *170% reduction* in load time for the [Club’s website](https://dscommunity.in), optimizing it from **18.7 seconds** to approximately **1.5 seconds**.'
+          - 'Authored diverse [Medium articles](https://medium.com/data-science-community-srm) for the Data Science Medium Journal, contributing to the club’s knowledge-sharing endeavors and reaching an audience of over **100,000+**.'
+          - 'Mentored peers and conducted weekly research paper reviews, staying abreast of advancements in *AI* and *Quantum Computing*.'
+          - 'Offered mentorship to a cohort of **300+ participants** throughout the Data Science Hackathon.'
         links:
-          - icon: "mdi:web"
-            text: "Website"
-            link: "https://dscommunity.in"
-        image: "dsc.png"
-        tags: ["Web Development"]
-      - title: "GDSC SRM"
-        designation: "Technical Team Member"
-        location: "SRM, Chennai"
-        duration: "May 2023 - Present"
+          - icon: 'mdi:web'
+            text: 'Website'
+            link: 'https://dscommunity.in'
+        image: 'dsc.png'
+        tags: ['Web Development']
+      - title: 'GDSC SRM'
+        designation: 'Technical Team Member'
+        location: 'SRM, Chennai'
+        duration: 'May 2023 - Present'
         description:
-          - "Worked on the Events Management System, a web application that streamlined event management processes, ensuring seamless coordination and communication among the team members. The application was developed using **Next.js, TailwindCSS, and Firebase**."
+          - 'Worked on the Events Management System, a web application that streamlined event management processes, ensuring seamless coordination and communication among the team members. The application was developed using **Next.js, TailwindCSS, and Firebase**.'
           - "Created a custom wrapper for **GCP's Cloud Storage** to facilitate efficient file uploads and downloads, enhancing the user experience and ensuring optimal performance."
         links:
-          - icon: "mdi:web"
-            text: "Website"
-            link: "https://gdscsrm.com"
-        image: "gdsc.png"
-        tags: ["Web Development"]
+          - icon: 'mdi:web'
+            text: 'Website'
+            link: 'https://gdscsrm.com'
+        image: 'gdsc.png'
+        tags: ['Web Development']

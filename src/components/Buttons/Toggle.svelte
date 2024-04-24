@@ -41,5 +41,5 @@
 	role="switch"
 	id="theme-toggle"
 	onclick={toggle}
-    checked={$theme === 'dark'}
+	checked={$theme === 'dark'}
 />

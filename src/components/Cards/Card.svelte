@@ -4,7 +4,7 @@
 
 	export let title, description, links, image, location, duration, designation, onHover;
 	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,gif}`, { eager: true });
-	let img_url = images[`/src/lib/images/${image || 'srm2.png'}`]?.default;
+	let img_url = `/images/${image || 'srm2.png'}`;
 
 	let values = { title, description, links, image, location, duration, designation };
 	let originalValues = {};
@@ -16,7 +16,7 @@
 	function handleHover() {
 		if (onHover) {
 			const { image: hoverImage, ...hoverProps } = onHover[0];
-			img_url = `/src/lib/images/${hoverImage || image || 'srm2.png'}`;
+			img_url = `/images/${hoverImage || image || 'srm2.png'}`;
 			Object.keys(hoverProps).forEach((prop) => {
 				if (prop in originalValues) {
 					values[prop] = hoverProps[prop];

@@ -75,7 +75,7 @@
 						"  - Develop workflow orchestration logic to coordinate execution of FaaS functions across clouds.",
 						"  - Implement intelligent function fusion techniques to reduce workflow execution latency and optimize costs.",
 						"  - Create placement strategies to strategically deploy functions across cloud providers for optimal performance and cost efficiency."
-					  ],
+					],
 					"image": "iisc.png",
 					"links": [
 						{
@@ -84,7 +84,7 @@
 						},
 						{
 							"link": "https://doi.org/10.1109/eScience55777.2022.00057",
-							"text": "XFaaS Paper [eScience 2022, CCGRID 2023]"							
+							"text": "XFaaS Paper [eScience 2022, CCGRID 2023]"
 						}
 					],
 					"tags": ["All", "Cloud"]
