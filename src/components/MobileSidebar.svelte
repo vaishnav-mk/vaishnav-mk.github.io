@@ -1,9 +1,6 @@
 <script>
-	import { base } from '$app/paths';
 	export let data;
-
-	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,gif}`, { eager: true });
-	const img_url = images[`/src/lib/images/${data?.image || 'srm2.png'}`]?.default;
+	const img_url = `/images/${data?.image || 'srm2.png'}`;
 </script>
 
 <aside

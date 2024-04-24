@@ -1,10 +1,6 @@
 <script>
-	import { base } from '$app/paths';
-
 	export let NavData;
 	const { title, links, icon, separator } = NavData;
-
-	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,gif}`, { eager: true });
 
 	const img_url = `/images/${icon || 'srm2.png'}`;
 </script>
@@ -17,7 +13,7 @@
 			{#if icon}
 				<img src={img_url} alt="logo" class="w-14 h-14 rounded-full" />
 			{/if}
-			<a class="text-gray-500 text-lg font-bold link-hover-border" href="{base}/">{title}</a>
+			<a class="text-gray-500 text-lg font-bold link-hover-border" href="/">{title}</a>
 		</div>
 		<div class="flex gap-4 items-center">
 			{#each links as { title, url }, index}

@@ -3,8 +3,9 @@
 	import Button from '../Buttons/Button.svelte';
 
 	export let title, description, links, image, location, duration, designation, onHover;
-	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,gif}`, { eager: true });
+
 	let img_url = `/images/${image || 'srm2.png'}`;
+	console.log({img_url})
 
 	let values = { title, description, links, image, location, duration, designation };
 	let originalValues = {};
@@ -26,7 +27,7 @@
 	}
 
 	function handleMouseLeave() {
-		img_url = `/src/lib/images/${image || 'srm2.png'}`;
+		img_url = `/images/${image || 'srm2.png'}`;
 		values = { ...originalValues };
 	}
 

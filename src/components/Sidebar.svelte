@@ -1,11 +1,9 @@
 <script>
-	import { base } from '$app/paths';
 	import Button from './Buttons/Button.svelte';
 	import Icon from '@iconify/svelte';
 	export let data;
 
-	const images = import.meta.glob(`$lib/images/*.{png,jpg,jpeg,gif}`, { eager: true });
-	const img_url = images[`/src/lib/images/${data?.image || 'srm2.png'}`]?.default;
+	const img_url = `/images/${data?.image || 'srm2.png'}`;
 
 	const socials = Object.entries(data?.socials || []);
 </script>
