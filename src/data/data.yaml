@@ -59,10 +59,7 @@ sections:
         location: 'Indian Institute of Science, Bangalore'
         duration: 'June 2024 - Present'
         description:
-          - "  - Design code wrappers to seamlessly integrate FaaS functions with different cloud providers' native FaaS engines."
           - '  - Develop workflow orchestration logic to coordinate execution of FaaS functions across clouds.'
-          - '  - Implement intelligent function fusion techniques to reduce workflow execution latency and optimize costs.'
-          - '  - Create placement strategies to strategically deploy functions across cloud providers for optimal performance and cost efficiency.'
         image: 'iisc.png'
         links:
           - link: 'https://dream-lab.in/hybrid-clouds-quantum'
